@@ -24,3 +24,23 @@ function useCalculator(apps) {
     apps.push("Calculator");
     return apps;
 }
+
+//Complete the function such that the app variable is added to the apps array. Then, return the apps array.
+function useApp(apps, app) {
+    apps.push(app);
+    return apps;
+
+//Complete the function getFirstApp such that it returns the first element from the apps array it receives as a parameter.
+    function getFirstApp(apps) {
+    return apps[0];
+}
+
+// Sample usage - do not modify
+console.log(getFirstApp(["Chrome", "Clock", "Twitter"])); // "Chrome"
+console.log(getFirstApp(["Clock", "Contacts"])); // "Clock"
+
+//Complete the function getLastApp such that it returns the last element from the apps array it receives as a parameter.
+function getLastApp(apps) {
+    return apps.at(-1);
+}
+}
